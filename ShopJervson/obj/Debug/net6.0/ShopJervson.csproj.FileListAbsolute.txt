@@ -1,0 +1,8 @@
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.csproj.AssemblyReference.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.AssemblyInfoInputs.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.AssemblyInfo.cs
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.RazorAssemblyInfo.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson\obj\Debug\net6.0\ShopJervson.RazorAssemblyInfo.cs

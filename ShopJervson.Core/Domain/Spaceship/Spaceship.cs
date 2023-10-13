@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopJervson.Core.Domain.Spaceship
 {
-    internal class Spaceship
+    public class Spaceship
     {
         [Key]
         public Guid? Id { get; set; }

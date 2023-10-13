@@ -1,0 +1,14 @@
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\bin\Debug\net6.0\ShopJervson.ApplicationServices.deps.json
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\bin\Debug\net6.0\ShopJervson.ApplicationServices.runtimeconfig.json
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\bin\Debug\net6.0\ShopJervson.ApplicationServices.dll
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\bin\Debug\net6.0\ShopJervson.ApplicationServices.pdb
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.AssemblyInfo.cs
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.dll
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\refint\ShopJervson.ApplicationServices.dll
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.pdb
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ShopJervson.ApplicationServices.genruntimeconfig.cache
+C:\Users\opilane\source\repos\ShopJervson\ShopJervson.ApplicationServices\obj\Debug\net6.0\ref\ShopJervson.ApplicationServices.dll
