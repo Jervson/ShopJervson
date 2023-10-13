@@ -1060,6 +1060,31 @@
             "rid": "win"
           }
         }
+      },
+      "ShopJervson.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ShopJervson.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopJervson.Core.dll": {}
+        }
+      },
+      "ShopJervson.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.22",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.22",
+          "ShopJervson.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopJervson.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopJervson.Data.dll": {}
+        }
       }
     }
   },
@@ -2882,6 +2907,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ShopJervson.Core/1.0.0": {
+      "type": "project",
+      "path": "../ShopJervson.Core/ShopJervson.Core.csproj",
+      "msbuildProject": "../ShopJervson.Core/ShopJervson.Core.csproj"
+    },
+    "ShopJervson.Data/1.0.0": {
+      "type": "project",
+      "path": "../ShopJervson.Data/ShopJervson.Data.csproj",
+      "msbuildProject": "../ShopJervson.Data/ShopJervson.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2889,7 +2924,8 @@
       "Microsoft.EntityFrameworkCore >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.12",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.12"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.12",
+      "ShopJervson.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2924,7 +2960,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj": {
+              "projectPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
