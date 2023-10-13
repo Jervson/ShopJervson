@@ -2,7 +2,6 @@ C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\bin\Debug\net6.0\Shop
 C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\bin\Debug\net6.0\ShopJervson.Core.runtimeconfig.json
 C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\bin\Debug\net6.0\ShopJervson.Core.dll
 C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\bin\Debug\net6.0\ShopJervson.Core.pdb
-C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\obj\Debug\net6.0\ShopJervson.Core.csproj.AssemblyReference.cache
 C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\obj\Debug\net6.0\ShopJervson.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\obj\Debug\net6.0\ShopJervson.Core.AssemblyInfoInputs.cache
 C:\Users\opilane\source\repos\ShopJervson\ShopJervson.Core\obj\Debug\net6.0\ShopJervson.Core.AssemblyInfo.cs

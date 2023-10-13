@@ -12,9 +12,9 @@ namespace ShopJervson.Core.Domain.Spaceship
         [Key]
         public Guid? Id { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }    
-        public int[] Dimensions { get; set; }
-        public int PassangerCount { get; set; }
+        public string Description { get; set; }
+        public ICollection<Dimension> Dimensions { get; set; }
+        public int PassengerCount { get; set; }
         public int CrewCount { get; set; }
         public int CargoWeight { get; set; }
         public int MaxSpeedInVaccum { get; set; }
@@ -32,5 +32,13 @@ namespace ShopJervson.Core.Domain.Spaceship
 
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set; }
+    }
+    public class Dimension
+    {
+        [Key]
+        public int DimensionId { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public int Depth { get; set; }
     }
 }
