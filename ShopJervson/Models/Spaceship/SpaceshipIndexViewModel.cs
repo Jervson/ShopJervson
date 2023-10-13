@@ -1,7 +1,7 @@
 ﻿using ShopJervson.Core.Domain.Spaceship;
 using System.ComponentModel.DataAnnotations;
 
-namespace ShopJervson.Models
+namespace ShopJervson.Models.Spaceship
 {
     public class SpaceshipIndexViewModel
     {

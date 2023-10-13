@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopJervson.Data;
 using ShopJervson.Models;
+using ShopJervson.Models.Spaceship;
 
 namespace ShopJervson.Controllers
 {
