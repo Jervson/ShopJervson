@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace ShopJervson.Core.Dto
 {
-    internal class SpaceshipDto
+    public class SpaceshipDto
     {
 
         [Key]
         public Guid? Id { get; set; } // globally unique identifier
         public string Name { get; set; } // ship name
         public string Description { get; set; } // ship description
-        public ICollection<Dimension> Dimensions { get; set; } // contains an pbject of Dimension type, wwhich contains three int values representing width(x) height(y) and depth (z) values
+        //public ICollection<Dimension> Dimensions { get; set; } // contains an pbject of Dimension type, wwhich contains three int values representing width(x) height(y) and depth (z) values
         public int PassengerCount { get; set; } // how many passengers does the ship carry
         public int CrewCount { get; set; } // how many crew members is needed to operate the ship
         public int CargoWeight { get; set; } // how much cargo the ship is able to carry
-        public int MaxSpeedInVaccuum { get; set; } // maximum speed after exiting atmosphere
+        public int MaxSpeedInVacuum { get; set; } // maximum speed after exiting atmosphere
         public DateTime BuiltAtDate { get; set; } // the date this ship was built at
         public DateTime MaidenLaunch { get; set; } // the date that this ship did its first voyage
         public string Manufacturer { get; set; } // company who manufactured the spaceship

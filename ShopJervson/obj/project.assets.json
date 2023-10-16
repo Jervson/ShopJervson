@@ -783,6 +783,19 @@
           }
         }
       },
+      "ShopJervson.ApplicationServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ShopJervson.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopJervson.ApplicationServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopJervson.ApplicationServices.dll": {}
+        }
+      },
       "ShopJervson.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2029,6 +2042,11 @@
         "version.txt"
       ]
     },
+    "ShopJervson.ApplicationServices/1.0.0": {
+      "type": "project",
+      "path": "../ShopJervson.ApplicationServices/ShopJervson.ApplicationServices.csproj",
+      "msbuildProject": "../ShopJervson.ApplicationServices/ShopJervson.ApplicationServices.csproj"
+    },
     "ShopJervson.Core/1.0.0": {
       "type": "project",
       "path": "../ShopJervson.Core/ShopJervson.Core.csproj",
@@ -2042,7 +2060,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.22",
+      "ShopJervson.ApplicationServices >= 1.0.0",
       "ShopJervson.Data >= 1.0.0"
     ]
   },
@@ -2053,11 +2073,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson\\ShopJervson.csproj",
       "projectName": "ShopJervson",
-      "projectPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
+      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson\\ShopJervson.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2079,8 +2099,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj": {
-              "projectPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj"
+            "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj": {
+              "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj"
+            },
+            "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson.Data\\ShopJervson.Data.csproj": {
+              "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson.Data\\ShopJervson.Data.csproj"
             }
           }
         }
@@ -2095,6 +2118,12 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.22, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

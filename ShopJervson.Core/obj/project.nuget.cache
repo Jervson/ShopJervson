@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BVmzQ3JQM6A9UL0AesDxDgrC5jcj7aMk6ODEZL0PUbp7+woMUtcWksoAbXwwo31BmicxewClqPWOcpzvcPNL2Q==",
+  "dgSpecHash": "ymzUQ7ztYLASSAE9uMf4134l/MqEPyEhlLXOhX0cOqfzKloY7QwR5jFw8eS0JEYGDR4pNzyMD598X7i3cPvTPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson.Core\\ShopJervson.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.22\\microsoft.entityframeworkcore.6.0.22.nupkg.sha512",

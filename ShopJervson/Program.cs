@@ -1,11 +1,14 @@
 using Microsoft.EntityFrameworkCore;
+using ShopJervson.Core.ServiceInterface;
 using ShopJervson.Data;
+using ShopJervson.ApplicationServices.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ShopJervsonContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ISpaceshipsServices, SpaceshipsServices>();
 
 var app = builder.Build();
 
