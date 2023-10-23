@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopJervson.Core.Domain.Spaceship
+namespace ShopJervson.Core.Domain
 {
     public class Spaceship
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ShopJervson.Core.Domain.Spaceship;
+using ShopJervson.Core.Domain;
 
 namespace ShopJervson.Data
 {
@@ -12,6 +12,7 @@ namespace ShopJervson.Data
     {
         public ShopJervsonContext(DbContextOptions<ShopJervsonContext> options) : base(options) { }
 
-        public DbSet<Spaceship> spaceships { get; set; }
+        public DbSet<Spaceship> Spaceships { get; set; }
+        public DbSet<FileToDatabase> FilesToDatabase { get; set; }
     }
 }

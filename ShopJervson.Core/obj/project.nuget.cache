@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ymzUQ7ztYLASSAE9uMf4134l/MqEPyEhlLXOhX0cOqfzKloY7QwR5jFw8eS0JEYGDR4pNzyMD598X7i3cPvTPw==",
+  "dgSpecHash": "Hh4tlBUGHS4vCGwSAFvKDH7x1N2fCbMHp+WAZSK+DEdqYFLeB4jL774c61eF18ckgV8Rc3n7QBPOvd69tBAuuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson23\\ShopJervson.Core\\ShopJervson.Core.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson44\\ShopJervson.Core\\ShopJervson.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\opilane\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.22\\microsoft.entityframeworkcore.6.0.22.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.22\\microsoft.entityframeworkcore.abstractions.6.0.22.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.22\\microsoft.entityframeworkcore.analyzers.6.0.22.nupkg.sha512",
@@ -21,7 +22,9 @@
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\opilane\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\opilane\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

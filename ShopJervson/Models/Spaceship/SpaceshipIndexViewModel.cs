@@ -1,4 +1,4 @@
-﻿using ShopJervson.Core.Domain.Spaceship;
+﻿using ShopJervson.Core.Domain;
 using System.ComponentModel.DataAnnotations;
 
 namespace ShopJervson.Models.Spaceship

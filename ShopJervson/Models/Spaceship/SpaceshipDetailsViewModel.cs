@@ -1,17 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using ShopJervson.Core.Domain;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace ShopJervson.Core.Dto
+namespace ShopJervson.Models.Spaceship
 {
-    public class SpaceshipDto
+    public class SpaceshipDetailsViewModel
     {
-
         [Key]
         public Guid? Id { get; set; } // globally unique identifier
         public string Name { get; set; } // ship name
@@ -31,14 +23,11 @@ namespace ShopJervson.Core.Dto
         public int FuelConsumptionPerDay { get; set; } // fuel consumed in a days worth of space traveled at maximum speed
         public int MaintenanceCount { get; set; } // how many maintenance sessions have been conducted on this ship
         public DateTime LastMaintenance { get; set; } // when was the last maintenance performed
-        public List<IFormFile> Files { get; set; } // Files that are to be added to this spaceship
-        public IEnumerable<FileToDatabaseDto> Image { get; set; } = new List<FileToDatabaseDto>(); // images themselves that are added
 
 
         // only in database
 
         public DateTime CreatedAt { get; set; } // when the entry was created
         public DateTime ModifiedAt { get; set; } // when the entry has been modified last
-
     }
 }

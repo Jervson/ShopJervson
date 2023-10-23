@@ -1,11 +1,10 @@
-﻿using ShopJervson.Core.Domain.Spaceship;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using ShopJervson.Core.Domain;
 
 namespace ShopJervson.Models.Spaceship
 {
-    public class SpaceshipEditViewModel
+    public class SpaceshipCreateUpdateViewModel
     {
-        [Key]
         public Guid? Id { get; set; } // globally unique identifier
         public string Name { get; set; } // ship name
         public string Description { get; set; } // ship description
@@ -31,13 +30,8 @@ namespace ShopJervson.Models.Spaceship
         public DateTime CreatedAt { get; set; } // when the entry was created
         public DateTime ModifiedAt { get; set; } // when the entry has been modified last
 
-        public class Dimension
-        {
-            [Key]
-            public int DimensionId { get; set; }
-            public int Width { get; set; }
-            public int Height { get; set; }
-            public int Depth { get; set; }
-        }
+
+
     }
+
 }

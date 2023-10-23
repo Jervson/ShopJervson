@@ -1,4 +1,4 @@
-﻿using ShopJervson.Core.Domain.Spaceship;
+﻿using ShopJervson.Core.Domain;
 using ShopJervson.Core.Dto;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,10 @@ namespace ShopJervson.Core.ServiceInterface
 {
     public interface ISpaceshipsServices
     {
-        Task<Spaceship> Add(SpaceshipDto dto);
+        Task<Spaceship> Create(SpaceshipDto dto);
+        //Task<Spaceship> GetUpdate(Guid id);         - not needed
+        Task<Spaceship> Update(SpaceshipDto dto);
+        Task<Spaceship> Delete(Guid Id);
+        Task<Spaceship> GetAsync(Guid Id);
     }
 }
