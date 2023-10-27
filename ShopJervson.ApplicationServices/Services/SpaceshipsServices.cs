@@ -61,6 +61,7 @@ namespace ShopJervson.ApplicationServices.Services
         {
             var domain = new Spaceship()
             {
+                Id = dto.Id,
                 Name = dto.Name,
                 Description = dto.Description,
                 //Dimensions = dto.Dimensions,
@@ -81,6 +82,10 @@ namespace ShopJervson.ApplicationServices.Services
                 CreatedAt = dto.CreatedAt,
                 ModifiedAt = DateTime.Now,
             };
+            if (dto.Files != null)
+            {
+                _files.UploadFilesToDatabase(dto, domain);
+            }
             _context.Spaceships.Update(domain);
             await _context.SaveChangesAsync();
             return domain;
@@ -95,8 +100,18 @@ namespace ShopJervson.ApplicationServices.Services
         public async Task<Spaceship> Delete(Guid Id)
         {
             var spaceshipId = await _context.Spaceships
-                .FirstOrDefaultAsync(x => x.Id == Id);
+               .FirstOrDefaultAsync(x => x.Id == Id);
 
+            var images = await _context.FilesToDatabase
+                .Where(x => x.SpaceshipId == Id)
+                .Select(y => new FileToDatabaseDto
+                {
+                    Id = y.Id,
+                    ImageTitle = y.ImageTitle,
+                    SpaceshipId = y.SpaceshipId
+                }).ToArrayAsync();
+
+            await _files.RemoveImagesFromDatabase(images);
             _context.Spaceships.Remove(spaceshipId);
             await _context.SaveChangesAsync();
 

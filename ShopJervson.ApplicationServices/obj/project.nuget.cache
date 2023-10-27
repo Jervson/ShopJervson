@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QSqoeDpcBJB0iQ2ZBdnOirPtucM7qCsuoKj4dP0dcumYIyqykJ6Z+PB/+y2uWNUuc9B+XlLKW/liwOAwRYK5Kw==",
+  "dgSpecHash": "K2iZA6Neak3nbqw20RcD2336jGSQXoEgmINHedCpMcBVBFa3IpjPxNSgGqNxUtUat9vJdqDMsVWqCwKN7SvR2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson44\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson346765tyuik\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

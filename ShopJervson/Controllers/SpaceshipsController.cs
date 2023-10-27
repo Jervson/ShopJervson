@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ShopJervson.ApplicationServices.Services;
 using ShopJervson.Core.Dto;
 using ShopJervson.Core.ServiceInterface;
 using ShopJervson.Data;
@@ -10,10 +12,12 @@ namespace ShopJervson.Controllers
     {
         private readonly ShopJervsonContext _context;
         private readonly ISpaceshipsServices _spaceshipsServices;
+        private readonly IFilesServices _filesServices;
         public SpaceshipsController
             (
             ShopJervsonContext context,
-            ISpaceshipsServices spaceshipsServices
+            ISpaceshipsServices spaceshipsServices,
+            IFilesServices fileServices
             )
         {
             _context = context;
@@ -63,14 +67,14 @@ namespace ShopJervson.Controllers
                 LastMaintenance = vm.LastMaintenance,
                 CreatedAt = vm.CreatedAt,
                 ModifiedAt = vm.ModifiedAt,
-                //Files = vm.Files,
-                //Image = vm.Image.Select(x => new FileToDatabaseDto
-                //{
-                //    Id = x.Id,
-                //    ImageData = x.ImageData,
-                //    ImageTitle = x.ImageTitle,
-                //    SpaceshipId = x.SpaceshipId,
-                //}).ToArray()
+                Files = vm.Files,
+                Image = vm.Image.Select(x => new FileToDatabaseDto
+                {
+                    Id = x.ImageId,
+                    ImageData = x.ImageData,
+                    ImageTitle = x.ImageTitle,
+                    SpaceshipId = x.SpaceshipId,
+                }).ToArray()
             };
             var result = await _spaceshipsServices.Create(dto);
             if (result == null)
@@ -87,28 +91,38 @@ namespace ShopJervson.Controllers
             {
                 return NotFound();
             }
-            var vm = new SpaceshipCreateUpdateViewModel()
-            {
-                Id = spaceship.Id,
-                Name = spaceship.Name,
-                Description = spaceship.Description,
-                PassengerCount = spaceship.PassengerCount,
-                CrewCount = spaceship.CrewCount,
-                CargoWeight = spaceship.CargoWeight,
-                MaxSpeedInVacuum = spaceship.MaxSpeedInVacuum,
-                BuiltAtDate = spaceship.BuiltAtDate,
-                MaidenLaunch = spaceship.MaidenLaunch,
-                Manufacturer = spaceship.Manufacturer,
-                IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned,
-                FullTripsCount = spaceship.FullTripsCount,
-                Type = spaceship.Type,
-                EnginePower = spaceship.EnginePower,
-                FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay,
-                MaintenanceCount = spaceship.MaintenanceCount,
-                LastMaintenance = spaceship.LastMaintenance,
-                CreatedAt = spaceship.CreatedAt,
-                ModifiedAt = spaceship.ModifiedAt
-            };
+            var photos = await _context.FilesToDatabase
+            .Where(x => x.SpaceshipId == id)
+            .Select(y => new ImageViewModel
+                 {
+                     SpaceshipId = y.Id,
+                      ImageId = y.Id,
+                      ImageData = y.ImageData,
+                      ImageTitle = y.ImageTitle,
+                      Image = string.Format("data:image/gif;base64,{0}", Convert.ToBase64String(y.ImageData))
+                 }).ToArrayAsync();
+                var vm = new SpaceshipCreateUpdateViewModel();
+                vm.Id = spaceship.Id;
+                vm.Name = spaceship.Name;
+                vm.Description = spaceship.Description;
+                vm.PassengerCount = spaceship.PassengerCount;
+                vm.CrewCount = spaceship.CrewCount;
+                vm.CargoWeight = spaceship.CargoWeight;
+                vm.MaxSpeedInVacuum = spaceship.MaxSpeedInVacuum;
+                vm.BuiltAtDate = spaceship.BuiltAtDate;
+                vm.MaidenLaunch = spaceship.MaidenLaunch;
+                vm.Manufacturer = spaceship.Manufacturer;
+                vm.IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned;
+                vm.FullTripsCount = spaceship.FullTripsCount;
+                vm.Type = spaceship.Type;
+                vm.EnginePower = spaceship.EnginePower;
+                vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
+                vm.MaintenanceCount = spaceship.MaintenanceCount;
+                vm.LastMaintenance = spaceship.LastMaintenance;
+                vm.CreatedAt = spaceship.CreatedAt;
+                vm.ModifiedAt = spaceship.ModifiedAt;
+                vm.Image.AddRange(photos);
+
             return View("CreateUpdate", vm);
         }
         [HttpPost]
@@ -134,7 +148,15 @@ namespace ShopJervson.Controllers
                 MaintenanceCount = vm.MaintenanceCount,
                 LastMaintenance = vm.LastMaintenance,
                 CreatedAt = vm.CreatedAt,
-                ModifiedAt = vm.ModifiedAt
+                ModifiedAt = vm.ModifiedAt,
+                Files = vm.Files,
+                Image = vm.Image.Select(x => new FileToDatabaseDto
+                {
+                    Id = x.ImageId,
+                    ImageData = x.ImageData,
+                    ImageTitle = x.ImageTitle,
+                    SpaceshipId = x.SpaceshipId,
+                }).ToArray()
             };
             var result = await _spaceshipsServices.Update(dto);
             if (result == null)
@@ -154,28 +176,39 @@ namespace ShopJervson.Controllers
                 return NotFound();
             }
 
-            var vm = new SpaceshipDetailsViewModel()
-            {
-                Id = spaceship.Id,
-                Name = spaceship.Name,
-                Description = spaceship.Description,
-                PassengerCount = spaceship.PassengerCount,
-                CrewCount = spaceship.CrewCount,
-                CargoWeight = spaceship.CargoWeight,
-                MaxSpeedInVacuum = spaceship.MaxSpeedInVacuum,
-                BuiltAtDate = spaceship.BuiltAtDate,
-                MaidenLaunch = spaceship.MaidenLaunch,
-                Manufacturer = spaceship.Manufacturer,
-                IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned,
-                FullTripsCount = spaceship.FullTripsCount,
-                Type = spaceship.Type,
-                EnginePower = spaceship.EnginePower,
-                FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay,
-                MaintenanceCount = spaceship.MaintenanceCount,
-                LastMaintenance = spaceship.LastMaintenance,
-                CreatedAt = spaceship.CreatedAt,
-                ModifiedAt = spaceship.ModifiedAt
-            };
+            var photos = await _context.FilesToDatabase
+                .Where(x => x.SpaceshipId == Id)
+                .Select(y => new ImageViewModel
+                     {
+                        SpaceshipId = y.Id,
+                        ImageId = y.Id,
+                        ImageData = y.ImageData,
+                        ImageTitle = y.ImageTitle,
+                        Image = string.Format("data:image/gif;base64,{0}", Convert.ToBase64String(y.ImageData))
+                  }).ToArrayAsync();
+
+                var vm = new SpaceshipDetailsViewModel();
+                vm.Id = spaceship.Id;
+                vm.Name = spaceship.Name;
+                vm.Description = spaceship.Description;
+                vm.PassengerCount = spaceship.PassengerCount;
+                vm.CrewCount = spaceship.CrewCount;
+                vm.CargoWeight = spaceship.CargoWeight;
+                vm.MaxSpeedInVacuum = spaceship.MaxSpeedInVacuum;
+                vm.BuiltAtDate = spaceship.BuiltAtDate;
+                vm.MaidenLaunch = spaceship.MaidenLaunch;
+                vm.Manufacturer = spaceship.Manufacturer;
+                vm.IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned;
+                vm.FullTripsCount = spaceship.FullTripsCount;
+                vm.Type = spaceship.Type;
+                vm.EnginePower = spaceship.EnginePower;
+                vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
+                vm.MaintenanceCount = spaceship.MaintenanceCount;
+                vm.LastMaintenance = spaceship.LastMaintenance;
+                vm.CreatedAt = spaceship.CreatedAt;
+                vm.ModifiedAt = spaceship.ModifiedAt;
+                vm.Image.AddRange(photos);
+
             return View(vm);
         }
         [HttpGet]
@@ -187,28 +220,37 @@ namespace ShopJervson.Controllers
             {
                 return NotFound();
             }
-            var vm = new SpaceshipDeleteViewModel()
-            {
-                Id = spaceship.Id,
-                Name = spaceship.Name,
-                Description = spaceship.Description,
-                PassengerCount = spaceship.PassengerCount,
-                CrewCount = spaceship.CrewCount,
-                CargoWeight = spaceship.CargoWeight,
-                MaxSpeedInVacuum = spaceship.MaxSpeedInVacuum,
-                BuiltAtDate = spaceship.BuiltAtDate,
-                MaidenLaunch = spaceship.MaidenLaunch,
-                Manufacturer = spaceship.Manufacturer,
-                IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned,
-                FullTripsCount = spaceship.FullTripsCount,
-                Type = spaceship.Type,
-                EnginePower = spaceship.EnginePower,
-                FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay,
-                MaintenanceCount = spaceship.MaintenanceCount,
-                LastMaintenance = spaceship.LastMaintenance,
-                CreatedAt = spaceship.CreatedAt,
-                ModifiedAt = spaceship.ModifiedAt
-            };
+            var photos = await _context.FilesToDatabase
+            .Where(x => x.SpaceshipId == Id)
+            .Select(y => new ImageViewModel
+               {
+                   SpaceshipId = y.Id,
+                   ImageId = y.Id,
+                   ImageData = y.ImageData,
+                   ImageTitle = y.ImageTitle,
+                   Image = string.Format("data:image/gif;base64,{0}", Convert.ToBase64String(y.ImageData))
+               }).ToArrayAsync();
+            var vm = new SpaceshipDeleteViewModel();
+            vm.Id = spaceship.Id;
+            vm.Name = spaceship.Name;
+            vm.Description = spaceship.Description;
+            vm.PassengerCount = spaceship.PassengerCount;
+            vm.CrewCount = spaceship.CrewCount;
+            vm.CargoWeight = spaceship.CargoWeight;
+            vm.MaxSpeedInVacuum = spaceship.MaxSpeedInVacuum;
+            vm.BuiltAtDate = spaceship.BuiltAtDate;
+            vm.MaidenLaunch = spaceship.MaidenLaunch;
+            vm.Manufacturer = spaceship.Manufacturer;
+            vm.IsSpaceshipPreviouslyOwned = spaceship.IsSpaceshipPreviouslyOwned;
+            vm.FullTripsCount = spaceship.FullTripsCount;
+            vm.Type = spaceship.Type;
+            vm.EnginePower = spaceship.EnginePower;
+            vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
+            vm.MaintenanceCount = spaceship.MaintenanceCount;
+            vm.LastMaintenance = spaceship.LastMaintenance;
+            vm.CreatedAt = spaceship.CreatedAt;
+            vm.ModifiedAt = spaceship.ModifiedAt;
+            vm.Image.AddRange(photos);
             return View(vm);
         }
         [HttpPost]
@@ -216,6 +258,21 @@ namespace ShopJervson.Controllers
         {
             var spaceshipId = await _spaceshipsServices.Delete(Id);
             if (spaceshipId == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpPost]
+        public async Task<IActionResult> RemoveImage(ImageViewModel file)
+        {
+            var dto = new FileToDatabaseDto()
+            {
+                Id = file.ImageId
+            };
+
+            var image = await _filesServices.RemoveImage(dto);
+            if (image == null)
             {
                 return RedirectToAction(nameof(Index));
             }
