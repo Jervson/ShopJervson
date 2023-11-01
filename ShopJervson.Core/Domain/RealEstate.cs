@@ -10,17 +10,21 @@ namespace ShopJervson.Core.Domain
     {
         House, Apartment, Room, Land, ParkingSpace, TimeShare, Garage, StorageUnit, Mansion, Castle, Station
     }
-    internal class RealEstate
+    public class RealEstate
     {
         public Guid Id { get; set; }
         public string Address { get; set; }
         public string? City { get; set; }
-        public int County { get; set; }
+        public string Country { get; set; }
+        public string County { get; set; }
         public int PostalCode { get; set; }
+        public int PhoneNumber { get; set; }
+        public int FaxNumber { get; set; }
         public string ListingDescription { get; set; }
         public int SquareMeters { get; set; }
         public DateTime BuildDate { get; set; }
         public int Price { get; set; }
+        public int RoomCount { get; set; }
         public int FloorCount { get; set; }
         public int? EstateFloor { get; set; }
         public int Bathrooms { get; set;}
@@ -35,9 +39,9 @@ namespace ShopJervson.Core.Domain
                 return Price / SquareMeters;
             }
         }
-        public EstateType EstateType { get; set; }
+        public string Type { get; set; }
         public bool IsPropertyNewDevelopment { get; set; }
-        public bool IsSold { get; set; }
+        public bool IsPropertySold { get; set; }
 
 
         public DateTime CreatedAt { get; set; }

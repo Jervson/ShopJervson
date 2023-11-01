@@ -292,3 +292,11 @@ C:\Users\opilane\Source\Repos\ShopJervson346765tyuik\ShopJervson\obj\Debug\net6.
 C:\Users\opilane\Source\Repos\ShopJervson346765tyuik\ShopJervson\obj\Debug\net6.0\ShopJervson.pdb
 C:\Users\opilane\Source\Repos\ShopJervson346765tyuik\ShopJervson\obj\Debug\net6.0\ShopJervson.genruntimeconfig.cache
 C:\Users\opilane\Source\Repos\ShopJervson346765tyuik\ShopJervson\obj\Debug\net6.0\ref\ShopJervson.dll
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.csproj.AssemblyReference.cache
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.AssemblyInfoInputs.cache
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.AssemblyInfo.cs
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.RazorAssemblyInfo.cache
+C:\Users\opilane\Source\Repos\ShopJervson1111\ShopJervson\obj\Debug\net6.0\ShopJervson.RazorAssemblyInfo.cs
