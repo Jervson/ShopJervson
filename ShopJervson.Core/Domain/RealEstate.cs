@@ -42,7 +42,7 @@ namespace ShopJervson.Core.Domain
         public string Type { get; set; }
         public bool IsPropertyNewDevelopment { get; set; }
         public bool IsPropertySold { get; set; }
-        public IEnumerable<FileToApi> FilesToApi { get; set; } = new List<FileToApi>(); //files to be added to the api
+                public IEnumerable<FileToApi> FilesToApi { get; set; } = new List<FileToApi>(); //files to be added to the api
 
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set;}

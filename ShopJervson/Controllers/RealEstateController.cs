@@ -2,6 +2,7 @@
 using ShopJervson.Core.Dto;
 using ShopJervson.Core.ServiceInterface;
 using ShopJervson.Models.RealEstate;
+using ShopJervson.ApplicationServices.Services;
 using System.Diagnostics.Metrics;
 using System.Net;
 using ShopJervson.Data;
@@ -14,14 +15,17 @@ namespace TARpe21ShopVaitmaa.Controllers
     {
         private readonly IRealEstatesServices _realEstates;
         private readonly ShopJervsonContext _context;
+        private readonly IFilesServices _filesServices;
         public RealEstatesController
             (
             IRealEstatesServices realEstates,
-            ShopJervsonContext context
+            ShopJervsonContext context,
+            IFilesServices filesServices
             )
         {
             _realEstates = realEstates;
             _context = context;
+            _filesServices = filesServices;
         }
         [HttpGet]
         public IActionResult Index()
@@ -281,6 +285,20 @@ namespace TARpe21ShopVaitmaa.Controllers
             }
             return RedirectToAction(nameof(Index));
 
+        }
+        [HttpPost]
+        public async Task<IActionResult> RemoveImage(FileToApiViewModel vm)
+        {
+            var dto = new FileToApiDto()
+            {
+                Id = vm.ImageId
+            };
+            var image = await _filesServices.RemoveImageFromApi(dto);
+            if (image == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }
