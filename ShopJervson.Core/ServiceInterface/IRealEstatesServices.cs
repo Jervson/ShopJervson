@@ -13,5 +13,6 @@ namespace ShopJervson.Core.ServiceInterface
         Task<RealEstate> GetAsync(Guid Id);
         Task<RealEstate> Create(RealEstateDto dto);
         Task<RealEstate> Update(RealEstateDto dto);
+        Task<RealEstate> Delete(Guid id);
     }
 }

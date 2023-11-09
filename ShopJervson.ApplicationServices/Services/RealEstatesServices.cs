@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,13 +20,6 @@ namespace ShopJervson.ApplicationServices.Services
             )
         {
             _context = context;
-        }
-
-        public async Task<RealEstate> GetAsync()
-        {
-            //var result = await _context.RealEstates
-            //    .FirstOrDefaultAsync(x => x.Id == id);
-            return null;
         }
         public async Task<RealEstate> Create(RealEstateDto dto)
         {
@@ -59,6 +53,53 @@ namespace ShopJervson.ApplicationServices.Services
             await _context.RealEstates.AddAsync(realEstate);
             await _context.SaveChangesAsync();  
             return realEstate;
+        }
+        public async Task<RealEstate> Delete(Guid id)
+        {
+            var realEstateId = await _context.RealEstates
+                .FirstOrDefaultAsync(x => x.Id == id);
+            _context.RealEstates.Remove(realEstateId);
+            await _context.SaveChangesAsync();
+            return realEstateId;
+        }
+        public async Task<RealEstate> Update(RealEstateDto dto)
+        {
+            var domain = new RealEstate()
+            {
+                Id = Guid.NewGuid(),
+                Address = dto.Address,
+                City = dto.City,
+                Country = dto.Country,
+                County = dto.County,
+                PostalCode = dto.PostalCode,
+                PhoneNumber = dto.PhoneNumber,
+                FaxNumber = dto.FaxNumber,
+                ListingDescription = dto.ListingDescription,
+                SquareMeters = dto.SquareMeters,
+                BuildDate = dto.BuildDate,
+                Price = dto.Price,
+                RoomCount = dto.RoomCount,
+                EstateFloor = dto.EstateFloor,
+                Bathrooms = dto.Bathrooms,
+                Bedrooms = dto.Bedrooms,
+                DoesHaveParkingSpace = dto.DoesHaveParkingSpace,
+                DoesHavePowerGridConnection = dto.DoesHavePowerGridConnection,
+                DoesHaveWaterGridConnection = dto.DoesHaveWaterGridConnection,
+                Type = dto.Type,
+                IsPropertyNewDevelopment = dto.IsPropertyNewDevelopment,
+                IsPropertySold = dto.IsPropertySold,
+                CreatedAt = dto.CreatedAt,
+                ModifiedAt = DateTime.Now,
+            };
+            _context.RealEstates.Update(domain);
+            await _context.SaveChangesAsync();
+            return domain;
+        }
+        public async Task<RealEstate> GetAsync(Guid id)
+        {
+            var result = await _context.RealEstates
+                .FirstOrDefaultAsync(x => x.Id == id);
+            return result;
         }
     }
 }

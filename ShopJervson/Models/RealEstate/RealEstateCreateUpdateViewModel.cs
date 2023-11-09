@@ -1,4 +1,5 @@
 ﻿using ShopJervson.Core.Domain;
+using ShopJervson.Models.RealEstate;
 
 namespace ShopJervson.Models.RealEstate
 {
@@ -36,8 +37,8 @@ namespace ShopJervson.Models.RealEstate
 
         public bool IsPropertyNewDevelopment { get; set; } //shows if the estate being sold is a newly developed housing unit, or an older existing one
         public bool IsPropertySold { get; set; } //shows if the property has been sold already 
-        public List<IFormFile> Files { get; set; }
-        public List<FileToDatabase> MyProperty { get; set; }
+        public List<IFormFile> Files { get; set; } //files
+        public List<FileToApiViewModel> FileToApiViewModels { get; set; } = new List<FileToApiViewModel>();
 
         //database only properties
 

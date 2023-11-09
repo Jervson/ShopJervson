@@ -1,6 +1,6 @@
 ﻿namespace ShopJervson.Models.RealEstate
 {
-    public class RealEsateDetailsViewModel
+    public class RealEstateDetailsViewModel
     {
         public Guid Id { get; set; } // unique id
         public string Address { get; set; } // street name, house number, flat number.  "Tulika 14-6"
@@ -30,6 +30,7 @@
 
         public bool IsPropertyNewDevelopment { get; set; } //shows if the estate being sold is a newly developed housing unit, or an older existing one
         public bool IsPropertySold { get; set; } //shows if the property has been sold already 
+        public List<FileToApiViewModel> FileToApiViewModels { get; set; } = new List<FileToApiViewModel>();
 
         //database only properties
 
