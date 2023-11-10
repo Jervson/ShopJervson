@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj": {}
+    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson\\ShopJervson.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj",
         "projectName": "ShopJervson.ApplicationServices",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.ApplicationServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj": {
-                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj"
+              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\ShopJervson.Data.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\ShopJervson.Data.csproj"
               }
             }
           }
@@ -84,18 +84,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj",
         "projectName": "ShopJervson.Core",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -172,18 +172,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\ShopJervson.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\ShopJervson.Data.csproj",
         "projectName": "ShopJervson.Data",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\ShopJervson.Data.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -205,8 +205,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj": {
-                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj"
+              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj"
               }
             }
           }
@@ -270,18 +270,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson\\ShopJervson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson\\ShopJervson.csproj",
         "projectName": "ShopJervson",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson\\ShopJervson.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -303,11 +303,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj": {
-                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj"
+              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj"
               },
-              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj": {
-                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj"
+              "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\ShopJervson.Data.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Data\\ShopJervson.Data.csproj"
               }
             }
           }
@@ -366,7 +366,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -52,6 +52,7 @@ namespace ShopJervson.ApplicationServices.Services
             realEstate.IsPropertySold = dto.IsPropertySold;
             realEstate.CreatedAt = DateTime.Now;
             realEstate.ModifiedAt = DateTime.Now;
+            _filesServices.FilesToApi(dto, realEstate);
 
             await _context.RealEstates.AddAsync(realEstate);
             await _context.SaveChangesAsync();  

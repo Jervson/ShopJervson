@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gClnYDgwXcHOtOhFcKK+IdP6o9rvbkkWzLfi/DWw9nROnVp/Oh0QRhIdZYJVa+Gsp2GT2QWoMeiNirq3PTy9/A==",
+  "dgSpecHash": "cBKCIdlMdkn2IqTDtxA8edwEFWbWgWrp9HeRNKBoZvyeazk0JBkVtSNU/c7Tu1FTseybygMzLyRfo57bBwaNRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.1.1\\microsoft.aspnetcore.hosting.2.1.1.nupkg.sha512",
