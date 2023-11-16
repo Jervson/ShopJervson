@@ -1,6 +1,6 @@
 ﻿namespace ShopJervson.Models.RealEstate
 {
-    public class RealEstateIndexViewModel
+    public class CarIndexViewModel
     {
         
         public Guid Id { get; set; } // unique id

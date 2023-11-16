@@ -1,14 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
-using ShopJervson.Core.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopJervson.Core.Domain
+namespace ShopJervson.Core.Dto
 {
-    public class Car
+    public class CarDto
     {
         public Guid Id { get; set; }
         public string Brand { get; set; }
@@ -17,7 +16,7 @@ namespace ShopJervson.Core.Domain
         public bool ZeroToHundred { get; set; }
         public string FuelConsumption { get; set; }
 
-        public IEnumerable<FileToApiDto> FilesToApi { get; set; } = new List<FileToApiDto>(); //files to be added to the api
+        public IEnumerable<FileToApiDto> FilesToApiDtos { get; set; } = new List<FileToApiDto>(); //files to be added to the api
         public DateTime CreatedAt { get; set; }
         public List<IFormFile> Files { get; set; }
         public DateTime ModifiedAt { get; set; }

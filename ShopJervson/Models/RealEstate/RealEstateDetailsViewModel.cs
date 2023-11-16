@@ -1,6 +1,6 @@
 ﻿namespace ShopJervson.Models.RealEstate
 {
-    public class RealEstateDetailsViewModel
+    public class CarDetailsViewModel
     {
         public Guid Id { get; set; } // unique id
         public string Address { get; set; } // street name, house number, flat number.  "Tulika 14-6"

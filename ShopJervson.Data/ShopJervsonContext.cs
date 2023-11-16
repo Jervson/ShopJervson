@@ -16,5 +16,6 @@ namespace ShopJervson.Data
         public DbSet<FileToDatabase> FilesToDatabase { get; set; }
         public DbSet<RealEstate> RealEstates { get; set; }
         public DbSet<FileToApi> FilesToApi { get; set; }
+        public DbSet<Car> Cars { get; set; }
     }
 }

@@ -9,7 +9,7 @@ using ShopJervson.Data;
 using ShopJervson.Models.Spaceship;
 using Microsoft.EntityFrameworkCore;
 
-namespace TARpe21ShopVaitmaa.Controllers
+namespace JervsonShop.Controllers
 {
     public class RealEstatesController : Controller
     {
@@ -32,7 +32,7 @@ namespace TARpe21ShopVaitmaa.Controllers
         {
             var result = _context.RealEstates
                 .OrderByDescending(x => x.CreatedAt)
-                .Select(x => new RealEstateIndexViewModel
+                .Select(x => new CarIndexViewModel
                 {
                     Id = x.Id,
                     Address = x.Address,
@@ -48,12 +48,12 @@ namespace TARpe21ShopVaitmaa.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            RealEstateCreateUpdateViewModel vm = new();
+            CarCreateUpdateViewModel vm = new();
             return View("CreateUpdate", vm);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(RealEstateCreateUpdateViewModel vm)
+        public async Task<IActionResult> Create(CarCreateUpdateViewModel vm)
         {
             var dto = new RealEstateDto()
             {
@@ -113,7 +113,7 @@ namespace TARpe21ShopVaitmaa.Controllers
                 FilePath = y.ExistingFilePath,
                 ImageId = y.Id
             }).ToArrayAsync();
-            var vm = new RealEstateCreateUpdateViewModel();
+            var vm = new CarCreateUpdateViewModel();
 
             vm.Id = realEstate.Id;
             vm.Address = realEstate.Address;
@@ -145,7 +145,7 @@ namespace TARpe21ShopVaitmaa.Controllers
             return View("CreateUpdate", vm);
         }
         [HttpPost]
-        public async Task<IActionResult> Update(RealEstateCreateUpdateViewModel vm)
+        public async Task<IActionResult> Update(CarCreateUpdateViewModel vm)
         {
             var dto = new RealEstateDto()
             {
@@ -207,7 +207,7 @@ namespace TARpe21ShopVaitmaa.Controllers
                   ImageId = y.Id
               }).ToArrayAsync();
 
-            var vm = new RealEstateDetailsViewModel();
+            var vm = new CarDetailsViewModel();
 
             vm.Id = realEstate.Id;
             vm.Address = realEstate.Address;
@@ -254,7 +254,7 @@ namespace TARpe21ShopVaitmaa.Controllers
                 ImageId = y.Id
             }).ToArrayAsync();
 
-            var vm = new RealEstateDeleteViewModel();
+            var vm = new CarDeleteViewModel();
 
             vm.Id = realEstate.Id;
             vm.Address = realEstate.Address;

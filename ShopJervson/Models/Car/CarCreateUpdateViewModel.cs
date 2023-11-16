@@ -1,25 +1,21 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ShopJervson.Core.Domain;
 using ShopJervson.Core.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopJervson.Core.Domain
+using ShopJervson.Models.RealEstate;
+namespace ShopJervson.Models.Car
 {
-    public class Car
+    public class CarCreateUpdateViewModel
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public string Brand { get; set; }
         public int YearBuilt { get; set; }
         public string Color { get; set; }
         public bool ZeroToHundred { get; set; }
         public string FuelConsumption { get; set; }
 
-        public IEnumerable<FileToApiDto> FilesToApi { get; set; } = new List<FileToApiDto>(); //files to be added to the api
+        public List<FileToApiViewModel> FileToApiViewModels { get; set; } = new List<FileToApiViewModel>();
         public DateTime CreatedAt { get; set; }
         public List<IFormFile> Files { get; set; }
         public DateTime ModifiedAt { get; set; }
     }
+
 }

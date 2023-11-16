@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj": {}
+    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj",
         "projectName": "ShopJervson.Core",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\ShopJervson.Core.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\ShopJervson.Core.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson52\\ShopJervson.Core\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -88,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
