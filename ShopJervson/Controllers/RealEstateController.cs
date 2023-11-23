@@ -29,10 +29,10 @@ namespace JervsonShop.Controllers
         }
         [HttpGet]
         public IActionResult Index()
-        {
+        {            
             var result = _context.RealEstates
                 .OrderByDescending(x => x.CreatedAt)
-                .Select(x => new CarIndexViewModel
+                .Select(x => new RealEstateIndexViewModel
                 {
                     Id = x.Id,
                     Address = x.Address,
@@ -48,12 +48,12 @@ namespace JervsonShop.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            CarCreateUpdateViewModel vm = new();
+            RealEstateCreateUpdateViewModel vm = new();
             return View("CreateUpdate", vm);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CarCreateUpdateViewModel vm)
+        public async Task<IActionResult> Create(RealEstateCreateUpdateViewModel vm)
         {
             var dto = new RealEstateDto()
             {
@@ -113,7 +113,7 @@ namespace JervsonShop.Controllers
                 FilePath = y.ExistingFilePath,
                 ImageId = y.Id
             }).ToArrayAsync();
-            var vm = new CarCreateUpdateViewModel();
+            var vm = new RealEstateCreateUpdateViewModel();
 
             vm.Id = realEstate.Id;
             vm.Address = realEstate.Address;
@@ -145,7 +145,7 @@ namespace JervsonShop.Controllers
             return View("CreateUpdate", vm);
         }
         [HttpPost]
-        public async Task<IActionResult> Update(CarCreateUpdateViewModel vm)
+        public async Task<IActionResult> Update(RealEstateCreateUpdateViewModel vm)
         {
             var dto = new RealEstateDto()
             {
@@ -207,7 +207,7 @@ namespace JervsonShop.Controllers
                   ImageId = y.Id
               }).ToArrayAsync();
 
-            var vm = new CarDetailsViewModel();
+            var vm = new RealEstateDetailsViewModel();
 
             vm.Id = realEstate.Id;
             vm.Address = realEstate.Address;
@@ -254,7 +254,7 @@ namespace JervsonShop.Controllers
                 ImageId = y.Id
             }).ToArrayAsync();
 
-            var vm = new CarDeleteViewModel();
+            var vm = new RealEstateDeleteViewModel();
 
             vm.Id = realEstate.Id;
             vm.Address = realEstate.Address;

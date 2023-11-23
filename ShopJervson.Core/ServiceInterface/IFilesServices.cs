@@ -11,6 +11,6 @@ namespace ShopJervson.ApplicationServices.Services
         void FilesToApi(RealEstateDto dto, RealEstate realEstate);
         Task<List<FileToApi>> RemoveImagesFromApi(FileToApiDto[] dtos);
         Task<FileToApi> RemoveImageFromApi(FileToApiDto dto);
-        void FilesToApi(CarDto dto, Car car);
+        void CarFilesToApi(CarDto dto, Car car);
     }
 }

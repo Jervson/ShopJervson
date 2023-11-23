@@ -19,7 +19,6 @@ namespace ShopJervson.Core.Domain
 
         public IEnumerable<FileToApiDto> FilesToApi { get; set; } = new List<FileToApiDto>(); //files to be added to the api
         public DateTime CreatedAt { get; set; }
-        public List<IFormFile> Files { get; set; }
         public DateTime ModifiedAt { get; set; }
     }
 }

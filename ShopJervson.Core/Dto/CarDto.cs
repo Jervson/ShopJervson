@@ -17,8 +17,8 @@ namespace ShopJervson.Core.Dto
         public string FuelConsumption { get; set; }
 
         public IEnumerable<FileToApiDto> FilesToApiDtos { get; set; } = new List<FileToApiDto>(); //files to be added to the api
+        public List<IFormFile> Files { get; set; }        
         public DateTime CreatedAt { get; set; }
-        public List<IFormFile> Files { get; set; }
         public DateTime ModifiedAt { get; set; }
     }
 }

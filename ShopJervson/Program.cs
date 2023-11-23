@@ -11,6 +11,7 @@ builder.Services.AddDbContext<ShopJervsonContext>(options => options.UseSqlServe
 builder.Services.AddScoped<ISpaceshipsServices, SpaceshipsServices>();
 builder.Services.AddScoped<IFilesServices, FilesServices>();
 builder.Services.AddScoped<IRealEstatesServices, RealEstatesServices>();
+builder.Services.AddScoped<ICarsServices, CarsServices>();
 
 var app = builder.Build();
 

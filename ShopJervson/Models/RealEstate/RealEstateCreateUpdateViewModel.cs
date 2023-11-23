@@ -7,7 +7,7 @@ namespace ShopJervson.Models.RealEstate
     {
         House, Apartment, Room, Land, ParkingSpace, TimeShare, Garage, StorageUnit, Mansion, Castle, Station
     }
-    public class CarCreateUpdateViewModel
+    public class RealEstateCreateUpdateViewModel
     {
         public Guid? Id { get; set; } // unique id
         public string Address { get; set; } // street name, house number, flat number.  "Tulika 14-6"

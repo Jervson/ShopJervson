@@ -17,11 +17,12 @@ namespace ShopJervson.Controllers
             (
             ShopJervsonContext context,
             ISpaceshipsServices spaceshipsServices,
-            IFilesServices fileServices
+            IFilesServices filesServices
             )
         {
             _context = context;
             _spaceshipsServices = spaceshipsServices;
+            _filesServices = filesServices;
         }
         public IActionResult Index()
         {

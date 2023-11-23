@@ -157,7 +157,7 @@ namespace ShopJervson.Controllers
                   ImageId = y.Id
               }).ToArrayAsync();
 
-            var vm = new CarDetailsViewModel();
+            var vm = new CarDetailDeleteViewModel();
 
             vm.Id = car.Id;
             vm.Brand = car.Brand;
@@ -187,7 +187,7 @@ namespace ShopJervson.Controllers
                 ImageId = y.Id
             }).ToArrayAsync();
 
-            var vm = new CarDeleteViewModel();
+            var vm = new CarDetailDeleteViewModel();
 
             vm.Id = car.Id;
             vm.Brand = car.Brand;

@@ -2,7 +2,7 @@
 
 namespace ShopJervson.Models.Car
 {
-    public class CarDetailsViewModel
+    public class CarDetailDeleteViewModel
     {
         public Guid? Id { get; set; }
         public string Brand { get; set; }
