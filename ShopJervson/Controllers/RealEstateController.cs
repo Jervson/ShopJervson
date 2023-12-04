@@ -9,7 +9,7 @@ using ShopJervson.Data;
 using ShopJervson.Models.Spaceship;
 using Microsoft.EntityFrameworkCore;
 
-namespace TARpe21ShopVaitmaa.Controllers
+namespace ShopJervson.Controllers
 {
     public class RealEstatesController : Controller
     {
