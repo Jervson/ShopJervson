@@ -11353,29 +11353,24 @@
   },
   "packageFolders": {
     "C:\\Users\\opilane\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
       "projectName": "ShopJervson",
-      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
+      "projectPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson\\ShopJervson.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\ProgramData\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -11389,11 +11384,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj"
+            "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj": {
+              "projectPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.ApplicationServices\\ShopJervson.ApplicationServices.csproj"
             },
-            "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\Repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj"
+            "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj": {
+              "projectPath": "C:\\Users\\opilane\\source\\repos\\ShopJervson\\ShopJervson.Data\\ShopJervson.Data.csproj"
             }
           }
         }
@@ -11460,7 +11455,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

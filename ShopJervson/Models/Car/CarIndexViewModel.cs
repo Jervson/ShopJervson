@@ -1,11 +1,12 @@
 ﻿using ShopJervson.Core.Dto;
 using ShopJervson.Models.RealEstate;
+using System.ComponentModel.DataAnnotations;
 
 namespace ShopJervson.Models.Car
 {
     public class CarIndexViewModel
     {
-
+        [Key] 
         public Guid Id { get; set; }
         public string Brand { get; set; }
         public int YearBuilt { get; set; }

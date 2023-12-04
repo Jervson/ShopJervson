@@ -38,7 +38,7 @@ namespace ShopJervson.ApplicationServices.Services
             car.CreatedAt = dto.CreatedAt;
             car.ModifiedAt = DateTime.Now;
 
-            _filesServices.FilesToApi(dto, car);
+            _filesServices.CarFilesToApi(dto, car);
 
             await _context.Cars.AddAsync(car);
             await _context.SaveChangesAsync();

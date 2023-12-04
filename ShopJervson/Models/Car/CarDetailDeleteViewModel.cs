@@ -1,10 +1,12 @@
 ﻿using ShopJervson.Core.Dto;
+using System.ComponentModel.DataAnnotations;
 
 namespace ShopJervson.Models.Car
 {
     public class CarDetailDeleteViewModel
     {
-        public Guid? Id { get; set; }
+        [Key]
+        public Guid Id { get; set; }
         public string Brand { get; set; }
         public int YearBuilt { get; set; }
         public string Color { get; set; }

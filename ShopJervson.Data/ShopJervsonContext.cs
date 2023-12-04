@@ -11,7 +11,6 @@ namespace ShopJervson.Data
     public class ShopJervsonContext : DbContext
     {
         public ShopJervsonContext(DbContextOptions<ShopJervsonContext> options) : base(options) { }
-
         public DbSet<Spaceship> Spaceships { get; set; }
         public DbSet<FileToDatabase> FilesToDatabase { get; set; }
         public DbSet<RealEstate> RealEstates { get; set; }

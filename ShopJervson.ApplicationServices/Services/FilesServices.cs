@@ -91,7 +91,7 @@ namespace ShopJervson.ApplicationServices.Services
                 }
             }
         }
-        public void FilesToApi(CarDto dto, Car car)
+        public void CarFilesToApi(CarDto dto, Car car)
         {
             string uniqueFileName = null;
             if (dto.Files != null && dto.Files.Count > 0)
